@@ -1,4 +1,5 @@
-# go-gps
+# go-nominatim
+
 simple golang gogpslocation (gps) calculations
 
 ```
