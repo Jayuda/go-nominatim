@@ -6,7 +6,7 @@ simple golang gogpslocation (gps) calculations
 package main
 
 import(
-    "https://github.com/Jayuda/go-nominatim"
+    "github.com/Jayuda/go-nominatim"
     "fmt"
 )
 
