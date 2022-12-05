@@ -17,7 +17,7 @@ type ReverseData struct {
 	PlaceRank   int   `json:"place_rank"`
 	Category    string   `json:"category"`
 	Type        string   `json:"type"`
-	Importance  int   `json:"importance"`
+	Importance  float32   `json:"importance"`
 	Addresstype string   `json:"addresstype"`
 	Name        string   `json:"name"`
 	DisplayName string   `json:"display_name"`
