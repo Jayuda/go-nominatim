@@ -8,16 +8,16 @@ import (
 )
 
 type ReverseData struct {
-	PlaceID     string   `json:"place_id"`
+	PlaceID     int   `json:"place_id"`
 	Licence     string   `json:"licence"`
 	OsmType     string   `json:"osm_type"`
-	OsmID       string   `json:"osm_id"`
+	OsmID       int   `json:"osm_id"`
 	Lat         string   `json:"lat"`
 	Lon         string   `json:"lon"`
-	PlaceRank   string   `json:"place_rank"`
+	PlaceRank   int   `json:"place_rank"`
 	Category    string   `json:"category"`
 	Type        string   `json:"type"`
-	Importance  string   `json:"importance"`
+	Importance  int   `json:"importance"`
 	Addresstype string   `json:"addresstype"`
 	Name        string   `json:"name"`
 	DisplayName string   `json:"display_name"`
