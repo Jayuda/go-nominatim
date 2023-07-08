@@ -1,19 +1,18 @@
-# go-telegram-message
+# go-Nominatim
 
-Simple golang send message using apikey and telegram Id. 
+Simple golang GPS to Address
 
 ```
 package main
 
 import(
-    "github.com/Jayuda/go-telegram-message"
+    "github.com/Jayuda/go-nominatim"
     "fmt"
 )
 
 func main() {
-    ReverseData := telegram_message.Send("YourAPIKey", "Destination TelegramId Ex:-1981902810", "Your Message, Hello Boss")
+    ReverseData := gonominatim.GPSToAddress("https://nominatim.server.com", "-6.09182031", "101.09128301")
     Address := ReverseData.Address
     fmt.Println(Address)
 }
 ```
-# go-telegram-message
