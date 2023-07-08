@@ -1,18 +1,19 @@
-# go-nominatim
+# go-telegram-message
 
-simple golang gogpslocation (gps) calculations
+Simple golang send message using apikey and telegram Id. 
 
 ```
 package main
 
 import(
-    "github.com/Jayuda/go-nominatim"
+    "github.com/Jayuda/go-telegram-message"
     "fmt"
 )
 
 func main() {
-    ReverseData := gonominatim.GPSToAddress("https://nominatim.server.com", "-6.09182031", "101.09128301")
+    ReverseData := telegram_message.Send("YourAPIKey", "Destination TelegramId Ex:-1981902810", "Your Message, Hello Boss")
     Address := ReverseData.Address
     fmt.Println(Address)
 }
 ```
+# go-telegram-message
