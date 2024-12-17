@@ -40,10 +40,14 @@ type Addresss struct {
 
 // CleanString replaces single quotes with backticks in a string.
 func CleanString(s string) string {
-	s = strings.ReplaceAll(s, "'", "`")
+	s = strings.ReplaceAll(s, "'", "")
 	s = strings.ReplaceAll(s, "\n", "")
 	s = strings.ReplaceAll(s, "\r", "")
 	s = strings.ReplaceAll(s, "\t", "")
+	s = strings.ReplaceAll(s, "°", "")
+	s = strings.ReplaceAll(s, "\"", "")
+	s = strings.ReplaceAll(s, "/", "")
+	s = strings.ReplaceAll(s, "`", "")
 	return s
 }
 
